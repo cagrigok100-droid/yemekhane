@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Kampüs Yemekhane",
+    "slug": "yemekhane",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "tr.edu.universite.yemekhane"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "tr.edu.universite.yemekhane"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "asyncRoutes": {
+            "web": false
+          },
+          "sitemap": false
+        }
+      ],
+      "expo-status-bar",
+      "expo-secure-store",
+      "expo-font"
+    ],
+    "scheme": "yemekhane",
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
