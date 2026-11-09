@@ -2,7 +2,7 @@
 
 Öğrencilerin yemekhane sistemini telefondan kullanabilmesi için geliştirilmiş React Native (Expo SDK 58, TypeScript, Expo Router) uygulaması. iOS, Android ve web (önizleme) üzerinde çalışır.
 
-**Canlı demo:** https://kaganreis.github.io/kampus-yemekhane/ — telefon veya bilgisayar tarayıcısında açılır, kurulum gerekmez.
+**Canlı demo:** https://cagrigok100-droid.github.io/yemekhane/ — telefon veya bilgisayar tarayıcısında açılır, kurulum gerekmez.
 
 ## Çalıştırma
 
@@ -14,12 +14,7 @@ npm run web        # tarayıcıda önizleme: http://localhost:8081
 
 ## Demoyu yayınlama
 
-```bash
-npm run build:pages   # GitHub Pages için dist-pages/ klasörünü üretir (adres: /kampus-yemekhane/)
-npm run build:demo    # tek dosyalık sürüm: dist-demo/ (claude.ai Artifact ve diğer statik sunucular için)
-```
-
-`dist-pages/` içeriği `gh-pages` dalına gönderilir; GitHub Pages bu daldan yayın yapar.
+GitHub Actions, `main` dalındaki uygulama değişikliklerinden web sürümünü derler ve GitHub Pages’te yayımlar. Yayın durumunu [Actions](https://github.com/cagrigok100-droid/yemekhane/actions/workflows/pages.yml) sayfasından izleyebilirsiniz.
 
 **Demo hesap** (sahte backend, `src/data/seed.ts`):
 
